@@ -15,6 +15,7 @@ public class FileHandling {
     public static ArrayList<Pokemon> readPokemonData() throws IOException {
         Gson gson = new Gson();
 
+        //Läs in alla pokemons till en Arraylist
         ArrayList<Pokemon> pokemonList = null;
         try (FileReader reader = new FileReader("pokemon.json")) {
             Type pokemonListType = new TypeToken<ArrayList<Pokemon>>() {
