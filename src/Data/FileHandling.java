@@ -20,8 +20,7 @@ public class FileHandling {
             Type pokemonListType = new TypeToken<ArrayList<Pokemon>>() {
             }.getType();
             pokemonList = gson.fromJson(reader, pokemonListType);
-            //  pokemonList.forEach(System.out::println);
-        } catch (IOException e) {
+                    } catch (IOException e) {
             e.printStackTrace();
         }
 
